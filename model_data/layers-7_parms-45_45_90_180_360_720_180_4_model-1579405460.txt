@@ -1,0 +1,16 @@
+Net(
+  (conv1): Conv1d(1, 45, kernel_size=(5,), stride=(1,))
+  (conv2): Conv1d(45, 90, kernel_size=(5,), stride=(1,))
+  (conv3): Conv1d(90, 180, kernel_size=(5,), stride=(1,))
+  (conv4): Conv1d(180, 360, kernel_size=(4,), stride=(1,))
+  (conv5): Conv1d(360, 720, kernel_size=(4,), stride=(1,))
+  (fc1): Linear(in_features=3420, out_features=180, bias=True)
+  (fc2): Linear(in_features=180, out_features=4, bias=True)
+)/nAdam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)/nCrossEntropyLoss()
